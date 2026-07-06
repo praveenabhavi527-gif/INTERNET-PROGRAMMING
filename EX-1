@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title><h1>title ticket reservation system</h1></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <head>
+            <h2> reservation comapany</h2>
+            </head>
+            <p>hlo welcome to our company
+                <br> this is very use and it manage our time   </br>
+               
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfWwkQJy358GLuEtxvy0nLv-l48N7Rka6mzyAaSpucA&s=10">
+            <li>Features</li>
+            <li>faster reservation</li>
+            <li>stable</li>
+            <table border="l">
+                <tr>
+                <th>So.No</th>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Arrival Time</th>
+                <th>Departure Time</th>
+                <th>Price</th>
+           
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Praveena</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000</td>
+                   
+                <tr>
+                    <td>2</td>
+                    <td>kumar</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>raja</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>vijay</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>pavasri</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>raj</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ram</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>prem</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>sam</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>sam</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>ramar</td>
+                    <td>chennai</td>
+                    <td>thrichy</td>
+                    <td>12:00</td>
+                    <td>6:00</td>
+                    <td>2000
+                </tr>
+               
+               
+               
+               
+               
+                </tr>
+            </table>
+            <h3> Form</h3>
+            <form>
+                <lable> enter name</lable><input type="text" name="firstname">
+                <br>
+                <lable> phone number</lable><input type="phone number" name="phone number">
+                <br>
+                <lable> age</lable><input type="age" name="age">
+                <br>
+                <lable>gender</lable><input type="email" name="email">
+               
+                 
+                                 
+                <input type="text" name="Firstname">
+                       <br>
+                <input type="submit" name="submit">
+            </form>
+            <table border="3">
+                <h2>GALLERY</h2>
+                <tr><th>compartment number</th><th>no.of.seat available</th></tr>
+                  <td>   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_QWSergewBg78SAWsGAke1NdVbPGSQ4nEfXLjFWnoA&s=10"></td>
+                   
+                    </tr>
+                    <td>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4AEsM8VVTEeYWOaSdol_MW5QrUzaFySYFQN3LdGTLg&s=10"></td>
+                   
+                    <td>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVveSAWsl9GPaO8R40IeDG0SJ3a18XuD5VrKwUapVh4w&s=10"></td>
+                    <td>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tVS7c2x8DE4-QFsdZyrkRn4JzHjgX3X50o_5EAGs6g&s=10"></td>
+                    <td>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-IDRyUDur8-685NlygpvEqn3CP3MEtjtrGe0qvp0CQ&s=10"></td>
+                 
+            </table>
+       
+        </div>
+    </body>
+</html>
+
