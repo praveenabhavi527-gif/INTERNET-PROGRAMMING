@@ -1,0 +1,77 @@
+<html> 
+
+    <head> 
+
+        <title>online shopping system</title> 
+
+        <meta charset="UTF-8"> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    </head> 
+
+    <body> 
+
+        <div> 
+
+            <header> 
+
+            <h1 align="center">online shopping system</h1> 
+
+            </header> 
+
+            <section><p>welcome to online shopping</p> 
+
+            <h2>image map</h2> 
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS065_MCEHK7MCMz8ScCsEqavRORTCED0IvgsErhSXUpA&s=10" alt="workplace" usemap="#workplace"> 
+
+            <h2>product audios</h2> 
+
+          
+
+                <audio controls> 
+
+                    <source src="audio.mp3" type="audio/mpeg"> 
+
+                    Your browser does not support the <code>audio</code> tag. 
+
+                </audio> 
+
+                <source src="audio.mp3" type="audio/mpeg"> 
+
+            
+
+            <h2>product video</h2> 
+
+            <video width="320" height="240"controls> 
+
+                   <source src="video.mp4" type="video/mp4"> 
+
+            </video> 
+
+            <h2>image map links</h2> 
+
+            <img src="linkimage.png" width="200" height="200"> 
+
+            <nav> 
+
+                <a href="https://www.amazon.in/s?k=grocery+items&crid=3VU1J0QD4D8MB&sprefix=grocer%2Caps%2C276&ref=nb_sb_ss_mvt-t11-ranker_2_6">click here</a> 
+
+            </nav> 
+
+            </a> 
+
+            </section> 
+
+             
+
+            <footer><p>@copy:2026<p></footer> 
+
+        </div> 
+
+    </body> 
+
+</html> 
+
+ 
