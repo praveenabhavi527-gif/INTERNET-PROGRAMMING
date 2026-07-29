@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Portal Registration Form</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#4facfe,#00c6fb,#005bea);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+.container{
+    width:600px;
+    background:#ffffff;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    border-top:8px solid #2563eb;
+}
+h2{
+    text-align:center;
+    color:#1d4ed8;
+    margin-bottom:10px;
+    font-size:30px;
+}
+p{
+    text-align:center;
+    color:#555;
+    margin-bottom:25px;
+}
+label{
+    display:block;
+    font-weight:bold;
+    color:#1e3a8a;
+    margin-bottom:6px;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=file],
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:18px;
+    border:1px solid #93c5fd;
+    border-radius:8px;
+    background:#eff6ff;
+    font-size:15px;
+    transition:0.3s;
+}
+textarea{
+    resize:none;
+    height:80px;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+    background:#ffffff;
+    box-shadow:0 0 8px rgba(37,99,235,0.4);
+}
+.radio-group,
+.checkbox-group{
+    margin-bottom:18px;
+}
+.radio-group label,
+.checkbox-group label{
+    display:inline;
+    font-weight:normal;
+    color:#333;
+    margin-right:15px;
+}
+input[type=submit]{
+    width:100%;
+    padding:14px;
+    background:linear-gradient(to right,#2563eb,#1d4ed8);
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+input[type=submit]:hover{
+    background:linear-gradient(to right,#1d4ed8,#1e40af);
+    transform:scale(1.02);
+}
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+</style>
+<script>
+function validateForm(){
+var name=document.getElementById("name").value.trim();
+var email=document.getElementById("email").value.trim();
+var password=document.getElementById("password").value;
+var confirmPassword=document.getElementById("confirmPassword").value;
+var mobile=document.getElementById("mobile").value.trim();
+var age=document.getElementById("age").value;
+var qualification=document.getElementById("qualification").value;
+var experience=document.getElementById("experience").value;
+var skills=document.getElementById("skills").value.trim();
+var marital=document.getElementById("marital").value;
+var resume=document.getElementById("resume").value;
+if(name==""){
+alert("Enter your name");
+return false;
+}
+var emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailPattern.test(email)){
+alert("Enter a valid email");
+return false;
+}
+if(password.length<8){
+alert("Password must contain at least 8 characters");
+return false;
+}
+if(password!=confirmPassword){
+alert("Passwords do not match");
+return false;
+}
+var mobilePattern=/^[0-9]{10}$/;
+if(!mobilePattern.test(mobile)){
+alert("Enter a valid 10-digit mobile number");
+return false;
+}
+if(age<18){
+alert("Age must be 18 or above");
+return false;
+}
+var gender=document.getElementsByName("gender");
+var genderSelected=false;
+for(var i=0;i<gender.length;i++){
+if(gender[i].checked){
+genderSelected=true;
+}
+}
+if(!genderSelected){
+alert("Select Gender");
+return false;
+}
+if(qualification==""){
+alert("Select Qualification");
+return false;
+}
+if(experience==""){
+alert("Select Experience");
+return false;
+}
+
+if(skills==""){
+alert("Enter your skills");
+return false;
+}
+var language=document.getElementsByName("language");
+var languageSelected=false;
+for(var i=0;i<language.length;i++){
+if(language[i].checked){
+languageSelected=true;
+}
+}
+if(!languageSelected){
+alert("Select at least one known language");
+return false;
+}
+if(marital==""){
+alert("Select Marital Status");
+return false;
+}
+var filePattern=/\.(pdf|doc|docx)$/i;
+if(!filePattern.test(resume)){
+alert("Upload only PDF, DOC or DOCX files");
+return false;
+}
+alert("Registration Successful!");
+return true;
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+<h2>💼 Job Portal Registration</h2>
+<p>Create your account and apply for your dream job</p>
+<form onsubmit="return validateForm()">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your full name">
+<label>Email Address</label>
+<input type="email" id="email" placeholder="Enter your email">
+<label>Password</label>
+<input type="password" id="password" placeholder="Minimum 8 characters">
+<label>Confirm Password</label>
+<input type="password" id="confirmPassword" placeholder="Confirm your password">
+<label>Mobile Number</label>
+<input type="text" id="mobile" placeholder="Enter your mobile number">
+<label>Age</label>
+<input type="number" id="age" placeholder="Enter your age">
+<label>Gender</label>
+<div class="radio-group">
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</div>
+<label>Qualification</label>
+<select id="qualification">
+<option value="">-- Select Qualification --</option>
+<option>SSLC</option>
+<option>HSC</option>
+<option>Diploma</option>
+<option>B.A</option>
+<option>B.Com</option>
+<option>B.Sc</option>
+<option>BCA</option>
+<option>B.E</option>
+<option>B.Tech</option>
+<option>MCA</option>
+<option>M.Sc</option>
+<option>M.E</option>
+<option>M.Tech</option>
+</select>
+<label>Experience</label>
+<select id="experience">
+<option value="">-- Select Experience --</option>
+<option>Fresher</option>
+<option>1 Year</option>
+<option>2 Years</option>
+<option>3 Years</option>
+<option>4 Years</option>
+<option>5+ Years</option>
+</select>
+<label>Skills</label>
+<textarea id="skills" placeholder="HTML, CSS, JavaScript, Python"></textarea>
+<label>Known Languages</label>
+<div class="checkbox-group">
+<input type="checkbox" name="language"> Tamil
+<input type="checkbox" name="language"> English
+<input type="checkbox" name="language"> Hindi
+<input type="checkbox" name="language"> Telugu
+</div>
+<label>Marital Status</label>
+<select id="marital">
+<option value="">-- Select Marital Status --</option>
+<option>Single</option>
+<option>Married</option>
+<option>Divorced</option>
+<option>Widowed</option>
+</select>
+<label>Upload Resume</label>
+<input type="file" id="resume">
+<input type="submit" value="Register">
+</form>
+<div class="footer">
+© 2026 Job Portal | All Rights Reserved
+</div>
+</div>
+</body>
+</html>
+
+Script
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let mobile = document.getElementById("mobile").value;
+    let resume = document.getElementById("resume").value;
+    if (name == "") {
+        alert("Name is required");
+        return false;
+    }
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Invalid Email");
+        return false;
+    }
+    if (password.length < 8) {
+        alert("Password must be at least 8 characters");
+        return false;
+    }
+    let mobilePattern = /^[0-9]{10}$/;
+     if (!mobilePattern.test(mobile)) {
+        alert("Enter a valid Mobile Number");
+        return false;
+    }
+    let filePattern = /\.(pdf|doc|docx)$/i;
+    if (!filePattern.test(resume)) {
+        alert("Only PDF, DOC and DOCX files are allowed");
+        return false;
+    }
+  alert("Registration Successful");
+    return true;
+}
