@@ -1,0 +1,671 @@
+<html>
+<head>
+    <title>IoT Examination</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0083b0;
+        }
+
+        .info {
+            background: #eefaff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .info label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .info input {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+        }
+
+        .question {
+            background: #f7f7f7;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #0083b0;
+            border-radius: 8px;
+        }
+
+        .question p {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .option {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background: #e0f7ff;
+            border-radius: 5px;
+        }
+
+        .answer-box {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #999;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 15px;
+            background: #0083b0;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background: #005f7f;
+        }
+
+        .section-title {
+            color: #0083b0;
+            border-bottom: 2px solid #0083b0;
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Examination</h1>
+
+    <form action="eXAMServlet" method="post">
+
+        <!-- STUDENT INFORMATION -->
+
+        <div class="info">
+
+            <label>Name:</label>
+            <input type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <label>Roll Number:</label>
+            <input type="text" name="rollno"
+                   placeholder="Enter roll number" required>
+
+            <label>Date:</label>
+            <input type="date" name="date" required>
+
+        </div>
+
+
+        <!-- MCQ SECTION -->
+
+        <h2 class="section-title">
+            Part A - Multiple Choice Questions
+        </h2>
+
+        <!-- Q1 -->
+
+        <div class="question">
+
+            <p>1. What does IoT stand for?</p>
+
+            <label class="option">
+                <input type="radio" name="q1"
+                       value="Internet of Technology" required>
+                Internet of Technology
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q1"
+                       value="Internet of Things">
+                Internet of Things
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q1"
+                       value="Information of Technology">
+                Information of Technology
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q1"
+                       value="Internet of Tools">
+                Internet of Tools
+            </label>
+
+        </div>
+
+
+        <!-- Q2 -->
+
+        <div class="question">
+
+            <p>2. Which component is used to detect physical conditions?</p>
+
+            <label class="option">
+                <input type="radio" name="q2"
+                       value="Actuator" required>
+                Actuator
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q2"
+                       value="Sensor">
+                Sensor
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q2"
+                       value="Router">
+                Router
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q2"
+                       value="Server">
+                Server
+            </label>
+
+        </div>
+
+
+        <!-- Q3 -->
+
+        <div class="question">
+
+            <p>3. Which board is commonly used in IoT projects?</p>
+
+            <label class="option">
+                <input type="radio" name="q3"
+                       value="ESP32" required>
+                ESP32
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q3"
+                       value="Monitor">
+                Monitor
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q3"
+                       value="Keyboard">
+                Keyboard
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q3"
+                       value="Printer">
+                Printer
+            </label>
+
+        </div>
+
+
+        <!-- Q4 -->
+
+        <div class="question">
+
+            <p>4. What is the communication model used by MQTT?</p>
+
+            <label class="option">
+                <input type="radio" name="q4"
+                       value="Client-Server" required>
+                Client-Server
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q4"
+                       value="Publish-Subscribe">
+                Publish-Subscribe
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q4"
+                       value="Peer-to-Peer">
+                Peer-to-Peer
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q4"
+                       value="Master-Slave">
+                Master-Slave
+            </label>
+
+        </div>
+
+
+        <!-- Q5 -->
+
+        <div class="question">
+
+            <p>5. What is the function of an actuator?</p>
+
+            <label class="option">
+                <input type="radio" name="q5"
+                       value="To sense data" required>
+                To sense data
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q5"
+                       value="To perform an action">
+                To perform an action
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q5"
+                       value="To store data">
+                To store data
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q5"
+                       value="To provide electricity">
+                To provide electricity
+            </label>
+
+        </div>
+
+
+        <!-- Q6 -->
+
+        <div class="question">
+
+            <p>6. Which protocol is commonly used for wireless IoT communication?</p>
+
+            <label class="option">
+                <input type="radio" name="q6"
+                       value="Wi-Fi" required>
+                Wi-Fi
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q6"
+                       value="HDMI">
+                HDMI
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q6"
+                       value="VGA">
+                VGA
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q6"
+                       value="SATA">
+                SATA
+            </label>
+
+        </div>
+
+
+        <!-- Q7 -->
+
+        <div class="question">
+
+            <p>7. What is the main role of an MQTT broker?</p>
+
+            <label class="option">
+                <input type="radio" name="q7"
+                       value="Forward messages between clients" required>
+                Forward messages between clients
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q7"
+                       value="Measure temperature">
+                Measure temperature
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q7"
+                       value="Control a motor">
+                Control a motor
+            </label>
+
+            <label class="option">
+                <input type="radio" name="q7"
+                       value="Provide electricity">
+                Provide electricity
+            </label>
+
+        </div>
+
+
+        <!-- ONE WORD SECTION -->
+
+        <h2 class="section-title">
+            Part B - One Word Questions
+        </h2>
+
+
+        <!-- Q8 -->
+
+        <div class="question">
+
+            <p>
+                8. What device is used to measure temperature?
+            </p>
+
+            <input class="answer-box"
+                   type="text"
+                   name="q8"
+                   placeholder="Enter one word"
+                   required>
+
+        </div>
+
+
+        <!-- Q9 -->
+
+        <div class="question">
+
+            <p>
+                9. What is the name of the protocol used for lightweight messaging in IoT?
+            </p>
+
+            <input class="answer-box"
+                   type="text"
+                   name="q9"
+                   placeholder="Enter one word"
+                   required>
+
+        </div>
+
+
+        <!-- Q10 -->
+
+        <div class="question">
+
+            <p>
+                10. Which device detects changes in the physical environment?
+            </p>
+
+            <input class="answer-box"
+                   type="text"
+                   name="q10"
+                   placeholder="Enter one word"
+                   required>
+
+        </div>
+
+
+        <br>
+
+        <button type="submit" class="submit">
+            Submit Examination
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+```
+
+
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class eXAMServlet extends HttpServlet {
+
+    @Override
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response)
+                          throws ServletException, IOException {
+
+        response.setContentType("text/html;charset=UTF-8");
+
+        PrintWriter out = response.getWriter();
+
+        // Student details
+        String name = request.getParameter("name");
+        String rollno = request.getParameter("rollno");
+        String date = request.getParameter("date");
+
+        int mark = 0;
+
+
+        // =========================
+        // MCQ ANSWERS
+        // =========================
+
+        // Q1
+        if ("Internet of Things".equals(request.getParameter("q1"))) {
+            mark++;
+        }
+
+        // Q2
+        if ("Sensor".equals(request.getParameter("q2"))) {
+            mark++;
+        }
+
+        // Q3
+        if ("ESP32".equals(request.getParameter("q3"))) {
+            mark++;
+        }
+
+         if ("Publish-Subscribe".equals(request.getParameter("q4"))) {
+            mark++;
+        }
+
+
+        if ("To perform an action".equals(request.getParameter("q5"))) {
+            mark++;
+        }
+
+        // Q6
+        if ("Wi-Fi".equals(request.getParameter("q6"))) {
+            mark++;
+        }
+        if ("Forward messages between clients"
+                .equals(request.getParameter("q7"))) {
+            mark++;
+        }
+
+
+        // =========================
+        // ONE WORD ANSWERS
+        // =========================
+
+        // Q8
+        String q8 = request.getParameter("q8");
+
+        if (q8 != null &&
+            q8.trim().equalsIgnoreCase("Temperature sensor")) {
+
+            mark++;
+        }
+
+
+        // Q9
+        String q9 = request.getParameter("q9");
+
+        if (q9 != null &&
+            q9.trim().equalsIgnoreCase("MQTT")) {
+
+            mark++;
+        }
+
+
+        String q10 = request.getParameter("q10");
+
+        if (q10 != null &&
+            q10.trim().equalsIgnoreCase("Sensor")) {
+
+            mark++;
+        }
+        out.println("<!DOCTYPE html>");
+
+        out.println("<html>");
+
+        out.println("<head>");
+
+        out.println("<title>Exam Result</title>");
+
+        out.println("<style>");
+
+        out.println("body {");
+        out.println("font-family: Arial;");
+        out.println("background: linear-gradient(135deg,#00b4db,#0083b0);");
+        out.println("padding: 50px;");
+        out.println("text-align: center;");
+        out.println("}");
+
+        out.println(".result {");
+        out.println("background: white;");
+        out.println("max-width: 600px;");
+        out.println("margin: auto;");
+        out.println("padding: 40px;");
+        out.println("border-radius: 15px;");
+        out.println("box-shadow: 0 8px 25px rgba(0,0,0,0.3);");
+        out.println("}");
+
+        out.println("h1 {");
+        out.println("color: #28a745;");
+        out.println("}");
+
+        out.println(".details {");
+        out.println("font-size: 18px;");
+        out.println("line-height: 2;");
+        out.println("}");
+
+        out.println(".score {");
+        out.println("font-size: 50px;");
+        out.println("font-weight: bold;");
+        out.println("color: #0083b0;");
+        out.println("margin: 20px;");
+        out.println("}");
+
+        out.println(".button {");
+        out.println("display: inline-block;");
+        out.println("padding: 12px 25px;");
+        out.println("background: #0083b0;");
+        out.println("color: white;");
+        out.println("text-decoration: none;");
+        out.println("border-radius: 7px;");
+        out.println("}");
+
+        out.println("</style>");
+
+        out.println("</head>");
+
+        out.println("<body>");
+
+        out.println("<div class='result'>");
+
+        out.println("<h1>✅ Examination Successfully Completed!</h1>");
+
+        out.println("<div class='details'>");
+
+        out.println("<b>Name:</b> " + name + "<br>");
+
+        out.println("<b>Roll Number:</b> " + rollno + "<br>");
+
+        out.println("<b>Date:</b> " + date + "<br>");
+
+        out.println("</div>");
+
+        out.println("<hr>");
+
+        out.println("<h2>Your Mark</h2>");
+
+        out.println("<div class='score'>");
+
+        out.println(mark + " / 10");
+
+        out.println("</div>");
+
+
+        // Result message
+
+        if (mark == 10) {
+
+            out.println("<h2>🏆 Excellent! Perfect Score!</h2>");
+
+        }
+        else if (mark >= 8) {
+
+            out.println("<h2>🎉 Excellent Work!</h2>");
+
+        }
+        else if (mark >= 5) {
+
+            out.println("<h2>👍 Good Effort!</h2>");
+
+        }
+        else {
+
+            out.println("<h2>📚 Keep Practicing!</h2>");
+
+        }
+
+
+        out.println("<br>");
+
+        out.println("<a class='button' href='index.html'>");
+        out.println("Take Examination Again");
+        out.println("</a>");
+
+        out.println("</div>");
+
+        out.println("</body>");
+
+        out.println("</html>");
+    }
+
+
+    @Override
+    protected void doGet(HttpServletRequest request,
+                          HttpServletResponse response)
+                          throws ServletException, IOException {
+
+        response.sendRedirect("index.html");
+    }
+
+
+    @Override
+    public String getServletInfo() {
+
+        return "IoT Examination Servlet";
+
+    }
+}
